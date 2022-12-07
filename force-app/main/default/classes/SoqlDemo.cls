@@ -35,6 +35,6 @@ public class SoqlDemo {
     }
     public static void accountSOQL_Filter(List<string> accNames){
         list<account> listAcc = [select id, name, phone from account where name in :accNames];
-        system.debug('list of account is-> ' + listAcc)
+        system.debug('list of account is-> ' + listAcc);
 }
 }
